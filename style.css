@@ -1,0 +1,39 @@
+.header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: fade-in;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transition: .5s
+}
+
+.header:hover {
+    /* animation-name: give-color; */
+    /* animation-duration: .5s; */
+    /* animation-timing-function: ease-in; */
+    color:fuchsia;
+}
+/* @keyframes give-color {
+    from {color: black}
+    to {color: cyan}
+} */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    50% {
+        opacity: .5;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.welcome {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+}
